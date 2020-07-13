@@ -1,0 +1,926 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    background-color: lightgray;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 1.35;
+}
+
+p {
+    margin-top: 24px;
+    line-height: 1.7;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+address {
+    display: inline;
+    font-style: normal;
+}
+.content-devider {
+    height: 32px;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.contents {
+    padding-top: 88px;
+    margin: 0 auto;
+}
+
+
+
+/*====================================================================================*/
+/* nav */
+.nav-top {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border-bottom: 1px solid lightgrey ;
+    z-index: 100;
+}
+
+.nav-items {
+    width: 1080px;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    display: block;
+    line-height: 88px;
+    margin: 0 10px;
+    min-width: 80px;
+    text-align: center;
+}
+
+.nav-list li:not(:last-child):hover {
+    border-bottom: #333 solid 2px ;
+}
+
+
+.nav-logo {
+    background-image: url(https://www.kakaobank.com/static/images/web/logo_black.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 88px;
+    width: 116px;
+    position: relative;
+    left: 0px;
+}
+
+.nav-logo a {
+    visibility: hidden;
+    display: inline-block;
+    height: 88px;
+    width: 116px;
+}
+
+.nav-list-submit-btn {
+    border-radius: 22px;
+    background-color: #fede22;
+    padding: 10px 20px;
+
+}
+
+/*====================================================================================*/
+/* drawer */
+.drawer{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid lightgrey ;
+    padding-bottom: 40px ;
+}
+
+.drawer ul{
+    margin-top: 30px;
+    width: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.drawer ul li {
+    text-align: center;
+    width: 216px;
+}
+.drawer ul li ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.drawer ul li ul li:first-child{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.drawer ul li ul li:not(:first-child){
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*====================================================================================*/
+/* intro section */
+
+.intro {
+    width: 100%;
+    height: 884px;
+    background-color: white;
+    position: relative;
+}
+
+.intro-title{
+    font-size: 49px;
+}
+
+.intro-content {
+    background-image: url(https://www.kakaobank.com/static/images/web/renewal/main-bg2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 884px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-left: 90px;
+    padding-top: 215px;
+}
+
+.intro-background-line {
+    background-color: #fede22;
+    width: 100%;
+    height: 720px;
+}
+
+.intro-download-btns {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-download-btn {
+    display: block;
+    background-color: white;
+    width: 178px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 12px;
+    font-size: 16.2px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.intro-download-btn span::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+.intro-download-btns .intro-download-btn:first-child span::before {
+    background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_200417.png);
+    background-position: -341px -292px;
+}
+
+.intro-download-btns .intro-download-btn:last-child span::before {
+    background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_200417.png);
+    background-position: -371px -292px;
+}
+
+/*================================================================================================*/
+/*withdrawal*/
+
+.withdrawal {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.withdrawal-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 86px;
+}
+
+.withdrawal-img {
+    width: 473px;
+    margin-right: 20px;
+}
+
+.withdrawal-contents-btn {
+    display: inline-block;
+    background-color: #f6f6ff;
+    width: 258px;
+    height: 56px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+    margin-top: 25px;
+}
+
+.withdrawal-contents-btn img {
+    width: 6px;
+    height: 9px;
+    margin-left: 8px;
+}
+
+/*================================================================================================*/
+/*deposit*/
+
+.deposit {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.deposit:hover .deposit-img{
+    left: 0;
+    opacity: 1;
+    /*deposit 마우스가 닿았을 때 hover 애니메이션 (오른쪽에서 왼쪽으로 나타나는 액션)*/
+    transition: left 1500ms ease-in-out, opacity 1500ms ease;
+}
+
+.deposit-img {
+    width: 409px;
+    height: 722px;
+    margin-left: 80px;
+    position: relative;
+    left: 100px;
+    opacity: 0;
+    /*5000초 hover 지연 후에 다시 원래대로 없어지는 기능 */
+    transition: left 1500ms ease-in-out 5000s, opacity 1500ms ease 5000s;
+}
+
+.deposit-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.deposit-contents-img {
+    width: 440px;
+    height: 105px;
+    margin-top: 45px;
+}
+
+.deposit-contents-btn {
+    display: inline-block;
+    background-color: #f6f6ff;
+    width: 158px;
+    height: 56px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+    margin-top: 25px;
+}
+
+.deposit-contents-btn img {
+    width: 6px;
+    height: 9px;
+    margin-left: 8px;
+}
+
+/*================================================================================================*/
+/*moim*/
+
+.moim {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    height: 750px;
+
+}
+
+.moim-img {
+    width: 450px;
+    height: 607px;
+    margin-right: 110px;
+}
+
+.moim-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.moim-contents-btn {
+    display: inline-block;
+    background-color: #f6f6ff;
+    width: 258px;
+    height: 56px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+    margin-top: 25px;
+}
+
+.moim-contents-btn img {
+    width: 6px;
+    height: 9px;
+    margin-left: 8px;
+}
+
+/*====================================================================================*/
+/* saving section */
+.saving {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    height: 650px;
+}
+
+.saving-img {
+    width: 492px;
+    height: 408px;
+    margin-left: 120px;
+}
+
+.saving-contents {
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+}
+
+.saving-contents-btn {
+    display: inline-block;
+    background-color: #f6f6ff;
+    width: 258px;
+    height: 56px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+    margin-top: 25px;
+}
+
+.saving-contents-btn img {
+    width: 6px;
+    height: 9px;
+    margin-left: 8px;
+}
+
+/*====================================================================================*/
+/* saving section */
+
+.transfer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-image: url(https://www.kakaobank.com/static/images/web/home_map.png);
+    background-repeat: no-repeat;
+    background-position: -12% 50%;
+    height: 750px;
+}
+
+.transfer:hover .transfer-img{
+    top: 0;
+    opacity: 1;
+    /*transfer 마우스가 닿았을 때 hover 애니메이션 (아래에서 위로 올라가는 액션)*/
+    transition: top 1000ms ease-in-out, opacity 1000ms ease;
+}
+
+.transfer-img {
+    width: 408px;
+    height: 715px;
+    position: relative;
+    top: 75px;
+    opacity: 0;
+    /*5000초 hover 지연 후에 다시 원래대로 없어지는 기능 */
+    transition: top 1000ms ease-in-out 5000s, opacity 1000ms ease 5000s;
+}
+
+.transfer-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 140px;
+}
+
+.transfer-contents-btn {
+    display: inline-block;
+    background-color: #f6f6ff;
+    width: 258px;
+    height: 56px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+    margin-top: 25px;
+}
+
+.transfer-contents-btn img {
+    width: 6px;
+    height: 9px;
+    margin-left: 8px;
+}
+
+/*====================================================================================*/
+/* submit-form */
+
+.form-submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 930px;
+    position: relative;
+}
+
+.form-submit:hover .day {
+    height: 0;
+    transition: height 1000ms ease ;
+}
+
+.form-submit-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    height: inherit;
+    background-color: #333b58 ;
+    z-index: -2;
+}
+
+.day {
+    width: 100%;
+    height: 100%;
+    background-color: #559cde;
+    z-index: -1;
+    transition: height 1000ms ease 5000s ;
+}
+
+.form-submit-text {
+    text-align: center;
+    padding-top: 160px;
+}
+.form-submit-text h3 {
+    font-weight: 600;
+    color:#fff;
+    font-size: 40px
+}
+.form-submit-text p {
+    margin-top: 24px;
+    color: white;
+}
+.form-submit-img {
+    width: 429px;
+    height: 563px;
+}
+.form-submit-btn {
+    display: inline-block;
+    width: 166px;
+    height: 52;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 52px;
+    color: white;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 10px;
+}
+
+.form-submit-btn img {
+    margin-left: 8px;
+    width: 6px;
+    height: 9px;
+}
+
+.star {
+    position: absolute;
+    background-color: #989caa;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.star1 {
+    top: 30%;
+    left: 10%;
+    animation-delay: 300ms;
+}
+
+.star2 {
+    top: 10%;
+    left: 20%;
+    animation-delay: 500ms;
+}
+
+.star3 {
+    top: 25%;
+    left: 15%;
+    animation-delay: 100ms;
+}
+
+.star4 {
+    top: 40%;
+    right: 15%;
+    animation-delay: 200ms;
+}
+
+.star5 {
+    top: 43%;
+    right: 30%;
+    animation-delay: 800ms;
+}
+
+.star6 {
+    top: 73%;
+    right: 27%;
+    animation-delay: 100ms;
+}
+
+.star7 {
+    top: 65%;
+    left: 22%;
+}
+
+.on {
+    background-color: white;
+    animation-duration: 2s;
+    animation-name: banzzak;
+    animation-iteration-count: infinite;
+}
+
+@keyframes banzzak{
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+.moon-wrapper {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+}
+
+.moon {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: yellow;
+    margin-left: 450px;
+    transition: background-color 500ms ease-out 5000s ;
+    
+}
+.moon-shadow {
+    position: absolute;
+    top : -20px;
+    left: -30px;
+    width: 10px;
+    height: 10px;
+    margin-left: 450px;
+    border-radius: 50%;
+    background-color: #559cde;
+    opacity: 0;
+    transition: width 500ms ease-out 5000s, 
+                height 500ms ease-out 5000s, 
+                opacity 100ms ease-out 5000s,
+                background-color 500ms ease-out 5000s;
+}
+.form-submit:hover .moon {
+    background-color: #fff;
+    transition: background-color 500ms ease-out ;
+}
+
+.form-submit:hover .moon-shadow {
+    background-color: #333b58;
+    width: 110px;
+    height: 110px;
+    opacity: 1;
+    /*앞에거 duration 뒤에거 delay*/
+    transition: width 500ms ease-out 430ms, 
+                height 500ms ease-out 430ms, 
+                opacity 100ms ease-out 500ms;
+}
+/*====================================================================================*/
+/* checkcard */
+.checkcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1122px;
+    background-color: white;
+}
+
+.checkcard-text {
+    padding-top: 150px;
+}
+
+.checkcard-text h3 {
+    text-align: center;
+}
+
+.checkcard-btn {
+    display: inline-block;
+    background-color: #f6f6ff;
+    width: 258px;
+    height: 56px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+    margin-top: 25px;
+}
+
+.checkcard-btn img {
+    margin-left: 8px;
+    width: 6px;
+    height: 9px;
+}
+
+.card-track {
+    display: flex;
+    align-items: center;
+    height: 475px;
+    margin-top: 80px;
+}
+
+.card-list{
+    width: 660px;
+    height: 475px;
+    margin: 0 90px;
+    position: relative;
+}
+
+.track-btn{
+    display: block;
+    width: 38px;
+    height: 72px;
+}
+
+.track-left{
+    background-image: url(https://www.kakaobank.com/static/images/web/img-left.png);
+}
+.track-right{
+    background-image: url(https://www.kakaobank.com/static/images/web/img-right.png);
+}
+
+.card {
+    display: block;
+    position: absolute;
+    transition: left 200ms ease-in-out, width 200ms ease-in-out;
+    transform: translate(-25%,-50%);
+    width: 240px;
+    z-index: 1;
+    top:50%;
+}
+
+.card-hidden{
+    display: hidden;
+}
+
+.card-center {
+    width: 280px;
+    z-index: 2;
+}
+/*====================================================================================*/
+/* strength section */
+.strength {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1035px;
+    background-color: #f9f9f9;
+}
+
+.strength-text {
+    padding-top: 160px;
+    text-align: center;
+}
+.strength-devider {
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    padding-top: 50px;
+    border-bottom: #333 2px solid;
+    margin-bottom: 120px;
+}
+
+.strength-decoration-bar{
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    top:135px;
+    left: 0px;
+    z-index: 1;
+}
+
+.strength-detail img {
+    position: relative;
+    width: 1020px;
+    height: 270px;
+    z-index: 2;
+}
+
+.strength-detail ul{
+    width: 1020px;
+    padding: 0;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+}
+
+.strength-detail ul li{
+    display: block;
+    width: 255px;
+    text-align: center;
+}
+
+.strength-detail ul li strong{
+    font-size: 18px;
+}
+
+.strength-detail ul li p{
+    font-size: 14px;
+}
+
+
+/*====================================================================================*/
+/* footer bar */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    background-color: #eee; 
+}
+
+.footer-contents {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.footer-top ul { 
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 12px;
+    padding-left: 0;
+    padding-top: 37px;
+}
+
+
+.footer-top li:not(:last-child){
+    padding-right: 20px;
+    border-right: #d8d8d8 solid 1px ;
+}
+
+.footer-top-item {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-middle {
+    font-size: 11px;
+}
+
+.phone-global{
+    color: #888888;
+    font-size: 9px;
+}
+
+.license{
+    margin-left: 15px;
+    color: #888888;
+    font-size: 9px;
+}
+
+.footer-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quality-cirtification-img {
+    width: 48px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.quality-cirtification {
+    display: flex;
+    align-items: center;
+}
+
+.sns {
+    top: 10px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.sns-btn{
+    position: relative;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin: 0 10px;
+    height: 20px;
+}
+
+.sns-btn-fb{
+    background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_200417.png);
+    background-position: -120px -360px;
+    width: 10px;
+}
+.sns-btn-kb{
+    background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_200417.png);
+    background-position: -140px -360px;
+    width: 12px;
+}
+.sns-btn-kbn{
+    background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_200417.png);
+    background-position: -389px -360px;
+    width: 14px;
+}
+.sns-btn-yt{
+    background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_200417.png);
+    background-position: -160px -360px;
+    width: 23px;
+}
+
+/* hidden은 영역을 차지합니다 ㅡㅡ */
+.sns-item{
+    display: none;
+}
